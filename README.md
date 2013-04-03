@@ -13,3 +13,5 @@ Click Decrypt to reverse obfuscation / convert obfuscated text into plain text.
 
 It will ignore any symbols and everything that is not a letter or number.
 It will preserve capitalization of alphabet letters.
+
+Most of the useful code is in "Form1.cs"
