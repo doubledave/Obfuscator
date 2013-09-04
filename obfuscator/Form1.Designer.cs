@@ -39,6 +39,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.textBoxMd5 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox1
@@ -91,6 +93,7 @@
             this.textBoxSender.Size = new System.Drawing.Size(100, 20);
             this.textBoxSender.TabIndex = 4;
             this.textBoxSender.Text = "123";
+            this.textBoxSender.TextChanged += new System.EventHandler(this.textBoxSender_TextChanged);
             // 
             // buttonObfuscate
             // 
@@ -152,11 +155,29 @@
             this.progressBar1.Size = new System.Drawing.Size(434, 23);
             this.progressBar1.TabIndex = 13;
             // 
+            // textBoxMd5
+            // 
+            this.textBoxMd5.Location = new System.Drawing.Point(180, 184);
+            this.textBoxMd5.Name = "textBoxMd5";
+            this.textBoxMd5.Size = new System.Drawing.Size(267, 20);
+            this.textBoxMd5.TabIndex = 14;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(177, 168);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(111, 13);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "md5 of encryption key";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(459, 307);
+            this.Controls.Add(this.textBoxMd5);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -164,6 +185,7 @@
             this.Controls.Add(this.buttonDecrypt);
             this.Controls.Add(this.buttonObfuscate);
             this.Controls.Add(this.textBoxSender);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -188,6 +210,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.TextBox textBoxMd5;
+        private System.Windows.Forms.Label label4;
     }
 }
 

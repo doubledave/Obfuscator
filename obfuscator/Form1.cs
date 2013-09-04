@@ -131,6 +131,11 @@ namespace obfuscator
             string password = s.ToString();
             return password;
         }
-     
+
+        private void textBoxSender_TextChanged(object sender, EventArgs e)
+        {
+            textBoxMd5.Text = GetMD5Hash(textBoxSender.Text);
+        }
+
     }
 }
